@@ -1,5 +1,5 @@
 # CAMS Atmospheric Composition Downloader
-========================================
+
 Downloads CAMS EAC4 reanalysis data for a single point (lat/lon).
 
 Variables downloaded:
