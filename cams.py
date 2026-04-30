@@ -1,8 +1,5 @@
 """
 cams.py — CAMS EAC4 Downloader · Post-processor · Visualizer
-=============================================================
-Downloads, processes, and visualizes CAMS EAC4 reanalysis data for a single
-point or a rectangular area, one variable and one month at a time.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 USER CONFIGURATION  ← Edit this section before running
@@ -41,24 +38,6 @@ AREA_E =  -57.0
 
 # ── Output ───────────────────────────────────────────────────────────────────
 OUTDIR = "cams_output"   # all files land here
-
-"""
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-USAGE
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-    python cams.py -o download       # fetch NetCDF from ADS
-    python cams.py -o postprocess    # convert NetCDF → CSV
-    python cams.py -o visualize      # plot CSV → PNG/PDF
-    python cams.py -o all            # run all three in sequence
-
-Requirements
-    pip install cdsapi xarray netCDF4 numpy pandas matplotlib cartopy
-
-ADS API key (~/.adsapirc):
-    url: https://ads.atmosphere.copernicus.eu/api
-    key: <your-key>
-"""
 
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 # Imports
