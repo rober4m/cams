@@ -2,7 +2,7 @@
 
 Downloads CAMS EAC4 reanalysis data for a single point (lat/lon).
 
-Variables downloaded:
+Variables:
   - Ozone (O₃)                  – total column & surface
   - Nitrogen dioxide (NO₂)      – total column & surface
   - Carbon monoxide (CO)         – total column & surface
@@ -16,7 +16,7 @@ Variables downloaded:
 
 ## Requirements
 ------------
-    pip install cdsapi xarray netCDF4 numpy pandas
+    pip install cdsapi xarray netCDF4 numpy pandas matplotlib cartopy rasterio
 
 ## CDS/ADS API key setup:
   1. Register at https://ads.atmosphere.copernicus.eu
@@ -25,7 +25,7 @@ Variables downloaded:
      key: <your-key>
 
 ## Usage
------
-    python download_cams.py                              # default: London, 2010–2023
-    python download_cams.py --lat 40.42 --lon -3.70     # Madrid
-    python download_cams.py --lat 48.85 --lon 2.35 --start 2005 --end 2023
+    python cams.py -o download       # fetch NetCDF from ADS
+    python cams.py -o postprocess    # convert NetCDF → CSV
+    python cams.py -o visualize      # plot CSV → PNG/PDF
+    python cams.py -o all            # run all three in sequence
